@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
-
+import 'secrets.dart';
 Future<void> saveToFavorites(Map<String, dynamic> recipe) async {
   final prefs = await SharedPreferences.getInstance();
   final List<String> favorites = prefs.getStringList('favoriteRecipes') ?? [];
@@ -34,8 +34,9 @@ class _RecipeDetailsPageState extends State<RecipeDetailsPage> {
   Future<void> fetchRecipeDetails() async {
     final id = widget.recipe['id'];
     final url = Uri.parse(
-      'https://api.spoonacular.com/recipes/$id/information?apiKey=39e5700aa380488ebac9642b0f36ba35',
-    );
+  'https://api.spoonacular.com/recipes/$id/information?apiKey=${Secrets.SPOONACULAR_API_KEY}'
+);
+
     final response = await http.get(url);
     if (response.statusCode == 200) {
       setState(() {

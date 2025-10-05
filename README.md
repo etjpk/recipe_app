@@ -13,7 +13,7 @@ A visually rich Flutter recipe app to search, browse, and favorite recipes with 
 
 ## Screenshots
 
-(Add screenshots here: e.g. `assets/screenshots/home.png`, `favorites.png`, etc.)
+ `assets/screenshots/app_page.png`, `Favorite.png`, `Details.png`, etc.
 
 ## Getting Started
 
@@ -39,5 +39,6 @@ A visually rich Flutter recipe app to search, browse, and favorite recipes with 
 
 1. Use the search bar to find recipes.
 2. Tap a recipe card to view details.
-3. Tap the heart icon to favorite/unfavorite.
+3. Tap the heart icon to favorite.
 4. Go to the favorites page to see all favorite recipes.
+5. Tap on delete icon to unfavorite.

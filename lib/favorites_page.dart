@@ -222,7 +222,7 @@ class _FavoritesPageState extends State<FavoritesPage> with SingleTickerProvider
                 SizedBox(height: 6),
               ],
             ),
-            // Optionally add interactive overlay buttons for share/more if wanted
+            
           ],
         ),
            ),

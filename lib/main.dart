@@ -3,8 +3,10 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'recipe_details.dart';
 import 'favorites_page.dart';
+import 'secrets.dart';
 
-// Main entry
+
+
 void main() => runApp(RecipeFinderApp());
 
 class RecipeFinderApp extends StatelessWidget {
@@ -29,8 +31,8 @@ class _RecipeHomePageState extends State<RecipeHomePage> {
 
   Future<void> fetchRecipes(String query) async {
     final url = Uri.parse(
-      'https://api.spoonacular.com/recipes/complexSearch?query=$query&apiKey=39e5700aa380488ebac9642b0f36ba35',
-    );
+  'https://api.spoonacular.com/recipes/complexSearch?query=$query&apiKey=${Secrets.SPOONACULAR_API_KEY}'
+);
     final response = await http.get(url);
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
@@ -89,16 +91,7 @@ class _RecipeHomePageState extends State<RecipeHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Row(
-                  //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  //   children: [
-                  //     Text('Recipe Finder',
-                  //       style: TextStyle(color: Colors.white, fontSize: 26, fontWeight: FontWeight.bold),
-                  //     ),
-                  //     Icon(Icons.favorite_border, color: Colors.white, size: 32),
-                  //   ],
-                  // ),
-                  // SizedBox(height: 20),
+                  
                   Text(
                     'Hello Chef, What are you craving?',
                     style: TextStyle(color: Colors.white, fontSize: 17),
