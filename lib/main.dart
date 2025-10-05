@@ -89,16 +89,16 @@ class _RecipeHomePageState extends State<RecipeHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text('Recipe Finder',
-                        style: TextStyle(color: Colors.white, fontSize: 26, fontWeight: FontWeight.bold),
-                      ),
-                      Icon(Icons.favorite_border, color: Colors.white, size: 32),
-                    ],
-                  ),
-                  SizedBox(height: 20),
+                  // Row(
+                  //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  //   children: [
+                  //     Text('Recipe Finder',
+                  //       style: TextStyle(color: Colors.white, fontSize: 26, fontWeight: FontWeight.bold),
+                  //     ),
+                  //     Icon(Icons.favorite_border, color: Colors.white, size: 32),
+                  //   ],
+                  // ),
+                  // SizedBox(height: 20),
                   Text(
                     'Hello Chef, What are you craving?',
                     style: TextStyle(color: Colors.white, fontSize: 17),

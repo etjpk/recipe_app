@@ -212,7 +212,7 @@ class _FavoritesPageState extends State<FavoritesPage> with SingleTickerProvider
                       ),
                       Spacer(),
                       IconButton(
-                        icon: Icon(Icons.favorite, color: Colors.redAccent, size: 22),
+                        icon: Icon(Icons.delete, color: const Color.fromARGB(255, 88, 82, 82), size: 22),
                         onPressed: () => removeFromFavorites(recipe),
                         tooltip: 'Remove from Favorites',
                       ),

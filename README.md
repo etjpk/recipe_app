@@ -1,16 +1,43 @@
-# recipe_finder_app
+# Recipe Finder App
 
-A new Flutter project.
+A visually rich Flutter recipe app to search, browse, and favorite recipes with a polished UI, persistent favorites, and smooth navigation.
+
+## Features
+
+- Search for recipes by ingredient or name
+- Trending recipes and cuisine filter chips
+- Add/remove recipes to favorites (persisted)
+- Beautiful detail & favorites screens with modern UI
+- Works on Android/iOS (and emulator/simulator)
+- Connects to [Spoonacular API](https://spoonacular.com/food-api)
+
+## Screenshots
+
+(Add screenshots here: e.g. `assets/screenshots/home.png`, `favorites.png`, etc.)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- [Flutter SDK](https://flutter.dev/docs/get-started/install) (latest stable)
+- Android Studio OR VS Code with Flutter/Dart plugins
+- An emulator/simulator or a real device
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Setup Instructions
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Clone the repository**
+2. **Install dependencies**
+3. **Configure API Key**
+
+    This app uses Spoonacular's API.  
+
+
+
+*(Make sure your emulator or device is connected.)*
+
+## Usage
+
+1. Use the search bar to find recipes.
+2. Tap a recipe card to view details.
+3. Tap the heart icon to favorite/unfavorite.
+4. Go to the favorites page to see all favorite recipes.
